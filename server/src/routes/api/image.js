@@ -28,6 +28,7 @@ router.post('/images', async (req, res) => {
     extension: EXTENSION,
     // 画像の縦サイズを指定する (undefined は元画像に合わせる)
     height: undefined,
+    create: { height: 200, width: 200 },
     // 画像の横サイズを指定する (undefined は元画像に合わせる)
     width: undefined,
   });
