@@ -25,7 +25,7 @@ const config = {
       '/api': 'http://localhost:3000',
     },
   },
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   entry: {
     main: [
       'core-js',
@@ -59,10 +59,6 @@ const config = {
           name: '[name].[ext]?[hash]',
           outputPath: path.resolve(__dirname, 'dist/img'),
         },
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        type: 'asset',
       },
     ],
   },

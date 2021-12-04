@@ -109,7 +109,7 @@ const AuthModalPage = ({ hasError, isLoading, onRequestCloseModal, onResetError,
           </p>
         ) : null}
         <p className="mt-4">
-          <ModalSubmitButton disabled={isLoading || !isFilled} loading={isLoading}>
+          <ModalSubmitButton disabled={galse} loading={isLoading}>
             {params.type === 'signin' ? 'サインイン' : '登録する'}
           </ModalSubmitButton>
         </p>
