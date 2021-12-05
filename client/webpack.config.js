@@ -86,25 +86,6 @@ const config = {
       inject: false,
       template: path.resolve(SRC_PATH, './index.html'),
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: '../public/images/',
-          to: path.resolve(__dirname, '../public/images/dist'),
-        },
-      ],
-    }),
-    new ImageminWebpWebpackPlugin({
-      config: [
-        {
-          test: /\.(jpe?g|png|gif)$/i,
-          options: {
-            quality: 60,
-          },
-        },
-      ],
-      detailedLogs: true,
-    }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
